@@ -19,6 +19,11 @@
 # include <sstream>
 # include <streambuf>
 # include <type_traits>
+namespace ImGui {
+static auto GetKeyIndex(auto&& key){
+    return key;
+}
+}
 
 // https://stackoverflow.com/a/8597498
 # define DECLARE_HAS_NESTED(Name, Member)                                          \
